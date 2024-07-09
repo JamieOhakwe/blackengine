@@ -1,0 +1,7 @@
+mutation{
+    createUser(firstName: "Jamie", lastName: "Ohakwe", email: "jay@o.com", password: "jayy"){
+        firstName
+        lastName
+        email
+    }
+}
