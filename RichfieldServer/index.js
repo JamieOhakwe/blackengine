@@ -54,8 +54,10 @@ const schema = new GraphQLSchema({query:RootQuery, mutation:RootMutation})
 
 app.use('/graphql', graphqlHTTP({
     schema,
-    graphiql: true
-}))
+    graphiql: true,
+    
+}));
+
 app.listen(PORT, ()=>{
     console.log('Server running');
 })
